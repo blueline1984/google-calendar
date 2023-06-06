@@ -1,11 +1,15 @@
+import { GlobalStyle } from "@/styles/Globalstyle";
 import { Route, Routes, Navigate } from "react-router-dom";
 import CalendarPage from "@/pages/calendar/Calendar";
 import EventsPage from "@/pages/events/Events";
 import NewEvent from "@/pages/newEvent/NewEvents";
+import Navbar from "@/component/Navbar/Navbar";
 
 function App() {
   return (
     <>
+      {/* <GlobalStyle /> */}
+      <Navbar />
       <Routes>
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/events">
